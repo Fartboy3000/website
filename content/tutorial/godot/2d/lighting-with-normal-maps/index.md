@@ -127,7 +127,9 @@ NORMAL = 2.0 * texture(normal_map, UV).rgb - 1.0;
 }
 ```
 
-In the `fragment()` function, we are sampling the normal map texture, transforming each sampled value to a valid unit vector, and assigning that unit vector to the `NORMAL` built-in attribute. After setting the normal map in the _Inspector_ to the uniform, you should end up with a lit character, similar to the version using the _AnimationPlayer_.
+In the `fragment()` function, we are sampling the normal map texture, transforming each sampled value to a valid unit vector, and assigning that unit vector to the `NORMAL` built-in attribute.
+In the _Inspector_, go to the _Material_ section and click on the _Shader Parameters_ dropdown. You should see a _Normal Map_ slot. Drag your Normal Map spritesheet into this slot.
+You should end up with a lit character, similar to the version using the _AnimationPlayer_.
 
 ### Normal Maps with Skeleton Deform
 
